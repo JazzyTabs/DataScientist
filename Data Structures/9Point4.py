@@ -16,7 +16,7 @@ for line in handle:
 counts = dict()
 
 for word in words:
-           counts[word] = counts.get(word, 0) + 1 
+           counts[word] = counts.get(word, 0) + 1
 
 maxval = None
 maxkey = None
