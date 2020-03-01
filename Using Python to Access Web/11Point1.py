@@ -1,7 +1,7 @@
 import re
 
 #Extracting Digits and Summing them
-hand = open("Week 1 Sample Text.txt")
+hand = open("regex_sum_35884.txt")
 numlist = []
 
 for line in hand:
