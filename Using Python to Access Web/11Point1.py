@@ -13,5 +13,5 @@ for line in hand:
     for i in range(len(extract)):
         num = float(extract[i])
         numlist.append(num)
-
+#
 print(sum(numlist))
