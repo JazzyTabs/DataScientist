@@ -1,6 +1,6 @@
 import json
 import urllib
-
+import urllib.request
 
 #Stroring the given parameters
 serviceurl = "http://python-data.dr-chuck.net/geojson?"
