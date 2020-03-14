@@ -1,10 +1,7 @@
 import json
 import requests
 import urllib
-import urllib.request
 
-header_json = json.dumps(dict(requests.get('https://www.google.com/').headers))
-pprint(header_json)
 
 #Stroring the given parameters
 serviceurl = "http://python-data.dr-chuck.net/geojson?"
