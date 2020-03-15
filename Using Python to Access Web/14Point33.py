@@ -1,7 +1,7 @@
 import urllib
 import json
 import urllib.request
-serviceurl = "http://py4e-data.dr-chuck.net/json?"
+serviceurl = "https://maps.googleapis.com/maps/api/geocode/json?"
 
 while True:
 	address = input("Enter location:")
@@ -13,7 +13,8 @@ while True:
 	data = uh.read()
 	print("retrieved", len(data), "characters")
 	try: js=json.loads(str(data))
-	except: js= None
+	except: js = None
+
 	if 'status' not in js or js['status'] != 'OK':
 	       print("=== failure to retrieve ===")
 	       print(data)
