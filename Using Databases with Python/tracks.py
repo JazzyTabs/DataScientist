@@ -1,3 +1,9 @@
+'''
+Author: Matsobane Mokomane
+Language: Python and SQL
+Date: April 05th 2020
+'''
+
 import xml.etree.ElementTree as ET
 import sqlite3
 
@@ -34,7 +40,7 @@ CREATE TABLE Track (
 ''')
 
 
-fname = raw_input('Enter file name: ')
+fname = input('Enter file name: ')
 if ( len(fname) < 1 ) : fname = 'Library.xml'
 
 # <key>Track ID</key><integer>369</integer>
@@ -50,7 +56,7 @@ def lookup(d, key):
 
 stuff = ET.parse(fname)
 all = stuff.findall('dict/dict/dict')
-print 'Dict count:', len(all)
+print('Dict count:', len(all))
 for entry in all:
     if ( lookup(entry, 'Track ID') is None ) : continue
 
@@ -65,7 +71,7 @@ for entry in all:
     if name is None or artist is None or genre is None or album is None :
         continue
 
-    print name, artist, album, genre, count, rating, length
+    print(name, artist, album, genre, count, rating, length)
 
     cur.execute('''INSERT OR IGNORE INTO Artist (name)
         VALUES ( ? )''', ( artist, ) )
