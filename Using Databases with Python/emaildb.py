@@ -52,7 +52,7 @@ conn.commit()
 
 # Getting the top 10 results and showing them
 sqlstr = 'SELECT org, count FROM Counts ORDER BY count DESC LIMIT 10'
-##print
+#print
 print("Counts:")
 for row in cur.execute(sqlstr) :
     print(str(row[0]), row[1])
