@@ -1,3 +1,9 @@
+'''
+Author: Matsobane Mokomane
+Language: Python and SQL
+Date: April 06th 2020
+'''
+
 import json
 import sqlite3
 
