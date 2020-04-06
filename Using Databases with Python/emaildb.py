@@ -4,7 +4,6 @@ Language: Python and SQL
 Date: April 05th 2020
 '''
 
-
 import sqlite3
 import urllib
 import urllib.request
