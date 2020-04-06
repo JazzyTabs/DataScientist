@@ -5,6 +5,7 @@ import json
 import time
 import ssl
 import sys
+import os
 
 api_key = False
 # If you have a Google Places API key, enter it here
