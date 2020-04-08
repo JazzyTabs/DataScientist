@@ -17,7 +17,7 @@ if api_key is False:
 else :
     serviceurl = "https://maps.googleapis.com/maps/api/geocode/json?"
 
-# Additional detail for urllib
+## Additional detail for urllib
 # http.client.HTTPConnection.debuglevel = 1
 
 conn = sqlite3.connect('geodata.sqlite')
