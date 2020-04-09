@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Locations (address TEXT, geodata TEXT)''')
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
-# Opening the where.data file and looping within the data file so to retrive over less than 200 locations
+# Opening the where.data file and looping within the data file so to retrive over less than 200 locations if greater than 200 the loop will end
 fh = open("where.data")
 count = 0
 for line in fh:
