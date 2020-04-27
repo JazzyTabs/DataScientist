@@ -11,6 +11,7 @@ myData = [
 [-38.3105571,146.4292232, 'Monash University Gippsland Student Lounge, 7N Mary Grant Bruce Dr, Churchill VIC 3842, Australia'],
 [-34.9221963,138.5922272, 'Yungondi Building, North Terrace, Adelaide SA 5000, Australia'],
 [47.80949,13.05501, 'Salzburg, Austria'],
+[-25.766996932 28.192999228, '###### Unisa Added location by Matsobane'],
 [27.7518284,-82.6267345, 'St Petersburg, FL, USA'],
 [40.4469796,-3.7278167, 'Av. Complutense, Madrid, Madrid, Spain'],
 [24.4337071,54.6178356, 'Masdar Institute PRT Station - Abu Dhabi - United Arab Emirates'],
