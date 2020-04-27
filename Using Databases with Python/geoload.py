@@ -23,8 +23,7 @@ else :
 conn = sqlite3.connect('geodata.sqlite')
 cur = conn.cursor()
 
-cur.execute('''
-CREATE TABLE IF NOT EXISTS Locations (address TEXT, geodata TEXT)''')
+cur.execute('''CREATE TABLE IF NOT EXISTS Locations (address TEXT, geodata TEXT)''')
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
@@ -78,5 +77,5 @@ for line in fh:
     if count % 10 == 0 :
         print('Pausing for a bit...')
         time.sleep(5)
-# Displaying 
+# Displaying
 print("Run geodump.py to read the data from the database so you can vizualize it on a map.")
