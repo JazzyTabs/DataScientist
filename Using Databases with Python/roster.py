@@ -7,7 +7,7 @@ Date: April 06th 2020
 import json
 import sqlite3
 
-#PART 1: Creating the database
+##PART 1: Creating the database
 dbname = "roster.sqlite"
 conn = sqlite3.connect(dbname)
 cur = conn.cursor()
